@@ -34,7 +34,15 @@
 
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
-
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.lighterbox.0.0.2.min.js"></script>
+		<script>
+			$(function()
+					{ // document ready
+					$(".lighterbox").lighterbox({ overlayColor : "white" });
+					}
+			);
+		</script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -116,8 +124,8 @@
 											</h2>
 										</header>
 										<p>
-											<a id=img2 href="#img1" class="bordered-feature-image"><img src="images/foto/img2.jpg" alt=""/></a>
-											<a id=img1 href="#img2" class="bordered-feature-image"><img src="images/foto/img1.jpg" alt=""/></a>						
+											<a id=img2 href="images/foto/img2.jpg" class="lighterbox bordered-feature-image"><img src="images/foto/img2.jpg" alt=""/></a>
+											<a id=img1 href="images/foto/img1.jpg" class="lighterbox bordered-feature-image"><img src="images/foto/img1.jpg" alt=""/></a>						
 										</p>
 									</section>
 
